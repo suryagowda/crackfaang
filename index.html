@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CrackFAANG - Question Tracker</title>
+</head>
+
+<body>
+
+    <div id="main-page">
+        <h1>CrackFAANG - Question Tracker</h1>
+        <label for="topic-dropdown">Choose a Topic:</label>
+        <select id="topic-dropdown"></select>
+        <button onclick="startSolving()">Start Solving</button>
+    </div>
+
+    <div id="questions-page" style="display: none;">
+        <h2 id="topic-title"></h2>
+        <button class="back-button" onclick="goToMainPage()">Go Back to Main Page</button>
+        <!-- Updated Table Structure -->
+        <table id="questions-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Problem</th>
+                    <th>Coding ninjas Link </th>
+                    <th>GeekForGeeks Link</th>
+                    <th>Done</th>
+                </tr>
+            </thead>
+            <tbody id="questions-body"></tbody>
+        </table>
+
+    </div>
+
+
+    
+
+<!-- Add this inside the body tag, just before the script tag -->
+<div id="water-bottle-container">
+    <div id="water-bottle">
+      <div id="water-level"></div>
+    </div>
+  </div>
+  
+
+
+    <script src="frontend.js"></script>
+</body>
+
+</html>
